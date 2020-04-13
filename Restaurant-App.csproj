@@ -10,4 +10,9 @@
   <ItemGroup>
     <Folder Include="Pages\Restaurants\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Restaurant-App.Data\Restaurant-App.Data.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

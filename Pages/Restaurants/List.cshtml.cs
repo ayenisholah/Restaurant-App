@@ -4,11 +4,20 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Restaurant_App.Data;
 
 namespace Restaurant_App.Pages.Restaurants
 {
     public class ListModel : PageModel
     {
+        private readonly IRestaurantData restaurantData;
+
+        public ListModel(IRestaurantData restaurantData)
+        {
+            this.restaurantData = restaurantData;
+        }
+
+
         public void OnGet()
         {
         }
