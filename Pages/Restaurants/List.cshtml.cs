@@ -14,15 +14,17 @@ namespace Restaurant_App.Pages.Restaurants
         private readonly IRestaurantData restaurantData;
 
         public IEnumerable<Restaurant> Restaurants { get; set; }
+        [BindProperty(SupportsGet =true)]
+        public string SearchTerm { get; set; }
 
         public ListModel(IRestaurantData restaurantData)
         {
             this.restaurantData = restaurantData;
         }
 
-        public void OnGet(string searchTerm)
+        public void OnGet()
         {
-            Restaurants = restaurantData.GetRestaurantsByName(searchTerm);
+            Restaurants = restaurantData.GetRestaurantsByName(SearchTerm);
         }
     }
 }
