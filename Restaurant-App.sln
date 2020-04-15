@@ -1,11 +1,12 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant-App", "Restaurant-App.csproj", "{57A54608-2B50-4C19-9A9E-934B6C3D22FD}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant-App", "Restaurant-App.csproj", "{57A54608-2B50-4C19-9A9E-934B6C3D22FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant-App.Core", "Restaurant-App.Core\Restaurant-App.Core.csproj", "{778F2CB5-6D71-49F4-A9E5-F0D40FFC9D9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant-App.Core", "Restaurant-App.Core\Restaurant-App.Core.csproj", "{778F2CB5-6D71-49F4-A9E5-F0D40FFC9D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant-App.Data", "Restaurant-App.Data\Restaurant-App.Data.csproj", "{E3A9500E-4815-496D-A55F-5C0F920DA268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant-App.Data", "Restaurant-App.Data\Restaurant-App.Data.csproj", "{E3A9500E-4815-496D-A55F-5C0F920DA268}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,5 +26,11 @@ Global
 		{E3A9500E-4815-496D-A55F-5C0F920DA268}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3A9500E-4815-496D-A55F-5C0F920DA268}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3A9500E-4815-496D-A55F-5C0F920DA268}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C7CD17F-2E53-4058-B74C-891369B30EBC}
 	EndGlobalSection
 EndGlobal
