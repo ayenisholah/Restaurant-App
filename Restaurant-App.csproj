@@ -14,4 +14,13 @@
             </GlobalPropertiesToRemove>
         </ProjectReference>
     </ItemGroup>
+    <ItemGroup>
+      <None Include="**/*" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Remove="obj\Debug\netcoreapp3.1\Restaurant-App.Views.dll" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Remove="Restaurant-App.Data\bin\Debug\netcoreapp3.1\Restaurant-App.Data.deps.json" />
+    </ItemGroup>
 </Project>
