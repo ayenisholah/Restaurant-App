@@ -1,4 +1,5 @@
-﻿@page           
+﻿@page
+
 @model Restaurant_App.Pages.Restaurants.ListModel
 @{
 }
@@ -16,7 +17,7 @@
             </div>
         </div>
     </div>
-</form>     
+</form>
 
 <table class="table">
     @foreach (var restaurant in Model.Restaurants)
@@ -25,6 +26,11 @@
             <td>@restaurant.Name</td>
             <td>@restaurant.Location</td>
             <td>@restaurant.Cuisine</td>
+            <td>
+                <a class="btn btn-primary" asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">
+                    <i class="fas fa-search-plus"></i>
+                </a>
+            </td>
         </tr>
     }
 </table>
